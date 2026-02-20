@@ -1,0 +1,51 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ROOT COLORS */
+:root {
+  --bg-main: #0b0f14;
+  --bg-secondary: #111827;
+  --accent-primary: #10b981;   /* emerald */
+  --accent-secondary: #f59e0b; /* amber */
+  --text-main: #e5e7eb;
+  --text-muted: #9ca3af;
+}
+
+/* BODY */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(160deg, #0b0f14, #111827);
+  color: var(--text-main);
+  line-height: 1.6;
+}
+
+/* LINKS */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* BUTTON DEFAULT */
+button {
+  background: linear-gradient(
+    135deg,
+    var(--accent-primary),
+    var(--accent-secondary)
+  );
+  color: #020617;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 999px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(16, 185, 129, 0.35);
+}

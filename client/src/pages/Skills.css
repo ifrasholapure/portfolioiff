@@ -1,0 +1,59 @@
+.skills-section {
+  min-height: 100vh;
+  padding: 100px 40px;
+  background: linear-gradient(135deg, #0f172a, #1e293b); /* matches homepage & other pages */
+  text-align: center;
+}
+
+.skills-title {
+  font-size: 44px;
+  margin-bottom: 40px;
+  background: linear-gradient(90deg, #22d3ee, #6366f1); /* teal → indigo, matching buttons and headings */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Grid for skills */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 25px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* Skill chip - Technical Skills */
+.skills-grid:nth-of-type(1) .skill-chip {
+  background: linear-gradient(135deg, #22d3ee, #6366f1); /* teal → indigo gradient */
+  color: #020617;
+  box-shadow: 0 5px 15px rgba(34, 211, 238, 0.3);
+}
+
+/* Skill chip - Soft Skills */
+.skills-grid:nth-of-type(2) .skill-chip {
+  background: linear-gradient(135deg, #f472b6, #a855f7); /* pink → violet gradient */
+  color: #020617;
+  box-shadow: 0 5px 15px rgba(244, 114, 182, 0.3);
+}
+
+.skill-chip {
+  padding: 14px 20px;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.skill-chip:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 12px 25px rgba(34, 211, 238, 0.5),
+              0 12px 25px rgba(244, 114, 182, 0.5);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .skills-title {
+    font-size: 32px;
+  }
+}

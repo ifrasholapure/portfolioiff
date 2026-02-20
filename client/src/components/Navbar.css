@@ -1,0 +1,29 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: linear-gradient(135deg, #1e293b, #020617);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 50px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.logo {
+  font-size: 26px;
+  font-weight: 800;
+  color: #fff;
+}
+
+.nav-links a {
+  color: #e5e7eb;
+  text-decoration: none;
+  font-weight: 600;
+  margin-left: 25px;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #34d399;
+}

@@ -1,0 +1,70 @@
+.about-section {
+  min-height: 100vh;
+  padding: 60px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #1e293b, #020617);
+}
+
+.about-card {
+  max-width: 900px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(14px);
+  padding: 40px;
+  border-radius: 22px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  animation: slideFade 1s ease;
+}
+
+.about-card h1 {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 20px;
+  background: linear-gradient(90deg, #a78bfa, #22d3ee);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.intro {
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.8;
+  color: #e5e7eb;
+  margin-bottom: 30px;
+}
+
+.education-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 25px;
+}
+
+.education-table th,
+.education-table td {
+  border: 1px solid rgba(255,255,255,0.2);
+  padding: 12px 15px;
+  text-align: center;
+  color: #d1d5db;
+}
+
+.education-table th {
+  background: rgba(255,255,255,0.1);
+}
+
+.about-card h2 {
+  color: #22d3ee;
+  margin-bottom: 10px;
+}
+
+.about-card p {
+  color: #d1d5db;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+@keyframes slideFade {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
