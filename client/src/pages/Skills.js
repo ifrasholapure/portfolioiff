@@ -16,22 +16,28 @@ function Skills() {
 
   return (
     <section className="skills-section">
-      <h1 className="skills-title">My Technical Skills</h1>
-      <div className="skills-grid">
-        {technicalSkills.map((skill, index) => (
-          <div className="skill-chip" key={index}>
-            {skill}
+      <div className="skills-container">
+        <div className="skills-card">
+          <h1 className="skills-title">Technical Skills</h1>
+          <div className="skills-grid">
+            {technicalSkills.map((skill, index) => (
+              <div className="skill-chip" key={index}>
+                {skill}
+              </div>
+            ))}
           </div>
-        ))}
-      </div>
+        </div>
 
-      <h1 className="skills-title" style={{ marginTop: "60px" }}>My Soft Skills</h1>
-      <div className="skills-grid">
-        {softSkills.map((skill, index) => (
-          <div className="skill-chip" key={index}>
-            {skill}
+        <div className="skills-card soft-skills">
+          <h1 className="skills-title">Soft Skills</h1>
+          <div className="skills-grid">
+            {softSkills.map((skill, index) => (
+              <div className="skill-chip" key={index}>
+                {skill}
+              </div>
+            ))}
           </div>
-        ))}
+        </div>
       </div>
     </section>
   );

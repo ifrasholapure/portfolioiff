@@ -1,14 +1,17 @@
-// Navbar.jsx
+import { NavLink } from "react-router-dom";
 import "./Navbar.css";
 
 function Navbar() {
   return (
     <nav className="navbar">
-      <div className="logo">Ifra Sholapure</div>
+      <h1 className="logo">Ifra Sholapure</h1>
+
       <div className="nav-links">
-        <a href="#home">Home</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+        <NavLink to="/" end>Home</NavLink>
+        <NavLink to="/about">About</NavLink>
+        <NavLink to="/projects">Projects</NavLink>
+        <NavLink to="/skills">Skills</NavLink>
+        <NavLink to="/contact">Contact</NavLink>
       </div>
     </nav>
   );
